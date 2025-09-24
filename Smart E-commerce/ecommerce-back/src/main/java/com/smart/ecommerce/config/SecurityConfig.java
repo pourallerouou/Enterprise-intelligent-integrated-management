@@ -10,10 +10,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * config/ 配置层
+ * config/ 全局配置
+ * 
  * 安全配置类
- *SecurityConfig.java - 安全配置
- *功能：
+ * SecurityConfig.java - 安全配置
+ *
+ * 功能：
  * 密码加密：配置 BCrypt 密码编码器
  * 安全策略：禁用 CSRF，设置无状态会话
  * 访问控制：允许 /api/auth/** 路径公开访问，其他路径需要认证

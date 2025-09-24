@@ -1,0 +1,14 @@
+### VS Code ###
+.vscode/
+
+
+# Node.js 依赖目录
+node_modules/
+
+# 构建工具缓存目录（比如 webpack/vite 等）
+
+
+# 可选：根据你的项目类型，还可以添加以下常见忽略项
+dist/
+build/
+
