@@ -1,4 +1,4 @@
-package com.smart.ecommerce.backend.entity;
+package com.smart.ecommerce.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

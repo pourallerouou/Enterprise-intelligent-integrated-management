@@ -1,4 +1,4 @@
-package com.smart.ecommerce.backend.dto;
+package com.smart.ecommerce.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

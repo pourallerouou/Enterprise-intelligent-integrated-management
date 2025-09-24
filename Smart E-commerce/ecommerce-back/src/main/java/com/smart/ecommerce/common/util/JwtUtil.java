@@ -1,4 +1,4 @@
-package com.smart.ecommerce.backend.util;
+package com.smart.ecommerce.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

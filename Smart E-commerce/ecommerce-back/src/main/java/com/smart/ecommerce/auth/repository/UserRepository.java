@@ -1,6 +1,6 @@
-package com.smart.ecommerce.backend.repository;
+package com.smart.ecommerce.repository;
 
-import com.smart.ecommerce.backend.entity.User;
+import com.smart.ecommerce.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

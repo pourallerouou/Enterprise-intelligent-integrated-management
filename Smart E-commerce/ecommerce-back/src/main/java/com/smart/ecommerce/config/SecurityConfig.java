@@ -1,4 +1,4 @@
-package com.smart.ecommerce.backend.config;
+package com.smart.ecommerce.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
