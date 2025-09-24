@@ -1,0 +1,484 @@
+/* SKU管理样式 */
+.sku-management {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  /* 使用普通布局，不设置flex */
+  padding: 0;
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.page-description {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* 搜索栏 */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-input .input-field {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* 卡片容器 - 固定高度68% */
+.sku-management .card {
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px; /* 添加卡片间距，匹配其他页面 */
+}
+
+
+/* 搜索栏卡片 - 自动高度 */
+.sku-management .card:first-child {
+  height: auto;
+  min-height: auto;
+}
+
+.card-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 表格样式 */
+.sku-table {
+  overflow: auto;
+  flex: 1;
+}
+
+.sku-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 1200px;
+}
+
+.sku-table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.sku-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.sku-table tr:hover {
+  background: var(--bg-hover);
+}
+
+/* SKU信息 */
+.sku-info {
+  min-width: 180px;
+}
+
+.sku-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.sku-id {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+}
+
+/* SPU信息 */
+.spu-info {
+  min-width: 100px;
+}
+
+.spu-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.spu-id {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+}
+
+/* 规格信息 */
+.specifications {
+  min-width: 130px;
+}
+
+.spec-item {
+  display: flex;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+
+.spec-item:last-child {
+  margin-bottom: 0;
+}
+
+.spec-key {
+  color: var(--text-secondary);
+  margin-right: 4px;
+  min-width: 50px;
+}
+
+.spec-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* 价格信息 */
+.price-info {
+  text-align: right;
+}
+
+.price {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* 成本信息 */
+.cost-info {
+  text-align: right;
+  min-width: 90px;
+}
+
+.cost {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.profit {
+  color: var(--success-color);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* 库存信息 */
+.stock-info {
+  text-align: center;
+  min-width: 70px;
+}
+
+.stock {
+  margin-bottom: 3px;
+}
+
+.reserved {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+/* 销量信息 */
+.sales-info {
+  text-align: center;
+}
+
+.sales {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* 标签样式 */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tag-info {
+  background: var(--info-bg);
+  color: var(--info-color);
+}
+
+.tag-success {
+  background: var(--success-bg);
+  color: var(--success-color);
+}
+
+.tag-warning {
+  background: var(--warning-bg);
+  color: var(--warning-color);
+}
+
+.tag-error {
+  background: var(--error-bg);
+  color: var(--error-color);
+}
+
+/* 操作按钮 */
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  }
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-primary);
+}
+
+.btn-danger {
+  background: var(--error-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: var(--error-hover);
+  }
+
+/* 卡片头部 */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* 统计卡片 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.stat-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: var(--accent-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-title {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .sku-table {
+    font-size: 12px;
+  }
+  
+  .sku-table th,
+  .sku-table td {
+    padding: 10px 6px;
+  }
+  
+  .sku-name {
+    font-size: 13px;
+  }
+  
+  .specifications {
+    min-width: 110px;
+  }
+  
+  .spec-item {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .search-input {
+    max-width: none;
+  }
+  
+  .sku-table {
+    font-size: 11px;
+  }
+  
+  .sku-table th,
+  .sku-table td {
+    padding: 6px 3px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-card {
+    padding: 12px;
+  }
+  
+  .stat-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .stat-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sku-name {
+    font-size: 13px;
+  }
+  
+  .spec-item {
+    font-size: 11px;
+  }
+  
+  .spec-key {
+    min-width: 50px;
+  }
+}

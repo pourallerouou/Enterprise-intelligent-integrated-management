@@ -1,0 +1,391 @@
+/* SPU管理样式 */
+.spu-management {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  /* 使用普通布局，不设置flex */
+  padding: 0;
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.page-description {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* 搜索栏 */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-input .input-field {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* 卡片容器 - 固定高度68% */
+.spu-management .card {
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px; /* 添加卡片间距，匹配其他页面 */
+}
+
+
+
+/* 搜索栏卡片 - 自动高度 */
+.spu-management .card:first-child {
+  height: auto;
+  min-height: auto;
+}
+
+.card-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 表格样式 */
+.spu-table {
+  overflow: auto;
+  flex: 1;
+}
+
+.spu-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.spu-table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.spu-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.spu-table tr:hover {
+  background: var(--bg-hover);
+}
+
+/* SPU信息 */
+.spu-info {
+  min-width: 180px;
+}
+
+.spu-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.spu-id {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.spu-description {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* 标签样式 */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tag-info {
+  background: var(--info-bg);
+  color: var(--info-color);
+}
+
+.tag-success {
+  background: var(--success-bg);
+  color: var(--success-color);
+}
+
+.tag-warning {
+  background: var(--warning-bg);
+  color: var(--warning-color);
+}
+
+.brand-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sku-count,
+.stock-count {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* 时间信息 */
+.time-info {
+  font-size: 12px;
+}
+
+.update-time {
+  color: var(--text-secondary);
+}
+
+/* 操作按钮 */
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  }
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-primary);
+}
+
+.btn-danger {
+  background: var(--error-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: var(--error-hover);
+  }
+
+/* 卡片头部 */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* 统计卡片 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+
+}
+
+.stat-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: var(--accent-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-title {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .search-input {
+    max-width: none;
+  }
+  
+  .spu-table {
+    font-size: 12px;
+  }
+  
+  .spu-table th,
+  .spu-table td {
+    padding: 10px 6px;
+  }
+  
+  .spu-info {
+    min-width: 140px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-card {
+    padding: 12px;
+  }
+  
+  .stat-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .stat-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .spu-table th,
+  .spu-table td {
+    padding: 8px 4px;
+  }
+  
+  .spu-name {
+    font-size: 14px;
+  }
+  
+  .spu-description {
+    font-size: 12px;
+  }
+}
